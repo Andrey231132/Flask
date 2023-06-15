@@ -1,3 +1,9 @@
-import flask
-print("Version of Flask - " + flask.__version__)
+from flask import Flask
+
+app = Flask(__name__)
+
+
+@app.route('/')
+def hello():
+    return 'Это мой сайт'
 
