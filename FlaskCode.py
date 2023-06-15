@@ -1,2 +1,3 @@
 import flask
-print(flask.__version__)
+print("Version of Flask - " + flask.__version__)
+
