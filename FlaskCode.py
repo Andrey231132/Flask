@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
 
 @app.route('/')
 def hello():
-    return 'Это мой сайт'
+    return render_template("HTML_FILE.html")
 
